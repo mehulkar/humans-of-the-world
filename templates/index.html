@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <title>Humans Of The World</title>
+    <script type="text/javascript" src='/assets/jquery-2.1.1.min.js'></script>
+    <script type="text/javascript">
+      $.get('/posts.json', function(res) {
+        res = JSON.parse(res);
+        res.pages.forEach(function(page) {
+          var el = $(document.createElement('li')).html(page);
+          $('body #posts').append(el);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Humans of the World</h1>
+    <section id='posts'></section>
+  </body>
+</html>

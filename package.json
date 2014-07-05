@@ -1,0 +1,26 @@
+{
+  "name": "humans-of-the-world",
+  "version": "0.0.0",
+  "description": "Humans of the world",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development ./node_modules/nodemon/bin/nodemon.js"
+  },
+  "keywords": [
+    "humans",
+    "world",
+    "pictures"
+  ],
+  "author": "Mehul Kar",
+  "license": "MIT",
+  "dependencies": {
+    "JSONStream": "^0.8.4",
+    "hapi": "^6.0.2",
+    "jsonfile": "^1.2.0",
+    "swig": "^1.4.1",
+    "through": "^2.3.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.2.1"
+  }
+}
